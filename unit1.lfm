@@ -1,0 +1,102 @@
+object FormMain: TFormMain
+  Left = 1719
+  Height = 700
+  Top = 31
+  Width = 950
+  Caption = 'MiniLagerverwaltung,'
+  ClientHeight = 700
+  ClientWidth = 950
+  Color = 14862105
+  Position = poScreenCenter
+  object LabelTitel: TLabel
+    Left = 232
+    Height = 64
+    Top = 48
+    Width = 584
+    AutoSize = False
+    Caption = 'Mini-Lagerverwaltung'
+    Color = clHighlight
+    Font.Height = -37
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object ButtonHinzufuegen: TButton
+    Left = 40
+    Height = 41
+    Top = 360
+    Width = 195
+    Caption = 'Hinzufügen'
+    TabOrder = 1
+    OnClick = ButtonHinzufuegenClick
+  end
+  object ButtonBearbeiten: TButton
+    Left = 280
+    Height = 41
+    Top = 360
+    Width = 144
+    Caption = 'Bearbeiten'
+    TabOrder = 2
+  end
+  object ButtonLoeschen: TButton
+    Left = 464
+    Height = 41
+    Top = 360
+    Width = 88
+    Caption = 'Löschen'
+    TabOrder = 3
+  end
+  object EditArtikelnummer: TEdit
+    Left = 40
+    Height = 50
+    Top = 216
+    Width = 384
+    AutoSize = False
+    TabOrder = 0
+    TextHint = 'Artikelnummer'
+  end
+  object EditBezeichnung: TEdit
+    Left = 40
+    Height = 50
+    Top = 296
+    Width = 384
+    AutoSize = False
+    TabOrder = 4
+    TextHint = 'Bezeichnung'
+  end
+  object EditEinzelpreis: TEdit
+    Left = 464
+    Height = 50
+    Top = 216
+    Width = 384
+    AutoSize = False
+    TabOrder = 5
+    TextHint = 'Einzelpreis'
+  end
+  object EditMindestbestand: TEdit
+    Left = 464
+    Height = 50
+    Top = 296
+    Width = 384
+    AutoSize = False
+    TabOrder = 6
+    TextHint = 'Mindestbestand'
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 179
+    Top = 520
+    Width = 950
+    AutoFillColumns = True
+    TabOrder = 7
+    ColWidths = (
+      64
+      221
+      221
+      221
+      221
+    )
+  end
+end
